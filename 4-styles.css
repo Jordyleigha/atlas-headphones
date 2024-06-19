@@ -316,3 +316,218 @@
         position: relative;
         top: 74px;
     }
+
+    /* Navigation menu styles */
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    background: transparent;
+  }
+  
+  header nav a:hover {
+    color: #FF6565;
+  }
+  
+  /* Hamburger menu icon styles */
+  .hamburger {
+    display: none; /* hide the hamburger menu icon by default */
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger span:first-child {
+    transform: translateY(-6px);
+  }
+  
+  .hamburger span:last-child {
+    transform: translateY(6px);
+  }
+  
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 480px) {
+    .nav-item {
+      display: block; /* show the navigation menu items on mobile devices */
+    }
+    .hamburger {
+      display: block; /* show the hamburger menu icon on mobile devices */
+    }
+    .nav-item a {
+      display: none; /* hide the navigation menu items on mobile devices */
+    }
+    .hamburger-checkbox:checked ~ .nav-item {
+      display: block; /* show the navigation menu when the checkbox is checked on mobile devices */
+    }
+    .hamburger-checkbox:checked ~ .nav-item a {
+      display: block; /* show the navigation menu items when the checkbox is checked on mobile devices */
+    }
+  }
+
+  .hamburger-checkbox {
+    display: none;
+  }
+
+
+/* Center the nav-items when the hamburger menu is toggled on mobile devices */
+@media only screen and (max-width: 480px) {
+    .hamburger-checkbox:checked ~.nav-item {
+      position: absolute; /* position the nav-items absolutely */
+      top: 50%; /* position the nav-items 50% from the top */
+      left: 50%; /* position the nav-items 50% from the left */
+      transform: translate(-50%, -50%); /* translate the nav-items to center them */
+      text-align: center; /* center the nav-items horizontally */
+    }
+    .hamburger-checkbox:checked ~.nav-item a {
+        display: block; /* display the nav-items as block elements */
+        margin: 10px; /* add some margin to separate the nav-items */
+        font-size: 24px; /* increase the font size of the nav-items */
+      }
+    }
+
+
+
+   /* Add this to your existing CSS file */
+
+/* Mobile layout styles */
+@media only screen and (max-width: 480px) {
+    /* Header styles */
+    .header-hero {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .nav-item {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-item a {
+      margin-bottom: 20px;
+    }
+  
+    /* Hero section styles */
+    .hero {
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 24px;
+    }
+    .hero h2 {
+      font-size: 18px;
+    }
+    .hero button {
+      width: 100%;
+    }
+  
+    /* What we do section styles */
+
+    @media only screen and (max-width: 480px) {
+        .main-items {
+            margin: 0 auto;
+            text-align: center;
+          }
+          .icons {
+            display: inline-block;
+            font-size: 3rem; /* Add this to increase the size of the icons */
+          }
+        }
+    .main-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+      }
+      .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .icons li {
+        margin-bottom: 20px;
+        width: 100%; /* Make each list item full-width */
+      }
+      .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+        font-size: 24px; /* Adjust the icon size to fit the screen */
+      }
+      .icons h3 {
+        font-size: 18px; /* Adjust the font size to fit the screen */
+      }
+      .icons p {
+        font-size: 14px; /* Adjust the font size to fit the screen */
+      }
+    }
+  
+    /* Result section styles */
+
+    @media only screen and (max-width: 480px) {
+        .result-section {
+          overflow: hidden; /* Prevent horizontal scrolling */
+        }
+        .section-wrapper {
+          width: 100%; /* Make the section wrapper full-width */
+        }
+        .pentagone {
+          flex-wrap: wrap; /* Allow the pentagone elements to wrap to the next line */
+          justify-content: center; /* Center the pentagone elements horizontally */
+        }
+        .pentagone-sample {
+          width: 50%; /* Make each pentagone sample half-width */
+          margin-bottom: 20px; /* Add some margin between pentagone samples */
+        }
+        .pentagone-container {
+          width: 100%; /* Make the pentagone container full-width */
+        }
+        .pentagone-title {
+          font-size: 18px; /* Adjust the font size to fit the screen */
+        }
+        .pentagone-discription {
+          font-size: 14px; /* Adjust the font size to fit the screen */
+        }
+      }
+
+  
+    /* Form section styles */
+    .contact-section {
+      padding: 20px;
+    }
+    .form-wrapper {
+      width: 100%;
+    }
+    .input-container {
+      margin-bottom: 20px;
+    }
+    .form-button {
+      width: 100%;
+    }
+  
+    /* Footer section styles */
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-footer {
+      margin-bottom: 20px;
+    }
+    .social-icons {
+      margin-bottom: 20px;
+    }
+    .copyright {
+      text-align: center;
+    }
+  }

@@ -389,7 +389,7 @@
       top: 50%; /* position the nav-items 50% from the top */
       left: 50%; /* position the nav-items 50% from the left */
       transform: translate(-50%, -50%); /* translate the nav-items to center them */
-      text-align: center; /* center the nav-items horizontally */
+      text-align: center; 
     }
     .hamburger-checkbox:checked ~.nav-item a {
         display: block; /* display the nav-items as block elements */
@@ -400,7 +400,6 @@
 
 
 
-   /* Add this to your existing CSS file */
 
 /* Mobile layout styles */
 @media only screen and (max-width: 480px) {
@@ -444,7 +443,7 @@
           }
           .icons {
             display: inline-block;
-            font-size: 3rem; /* Add this to increase the size of the icons */
+            font-size: 3rem; 
           }
         }
     .main-items {
@@ -530,4 +529,3 @@
     .copyright {
       text-align: center;
     }
-  }

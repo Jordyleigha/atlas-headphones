@@ -112,16 +112,16 @@
         <div class="form-wrapper">
             <form action="">
                 <div class="input-container">
-                    <label for="user-name" id="user-name">Name</label>
-                    <input type="text">
+                    <label for="user-name" id="user-name"></label>
+                    <input type="text" name="your-name" id="your-name" placeholder="Name" pattern="[A-Za-zA-z\s]{3,}" maxlength="35" autocomplete="on" accesskey="f" required="true">
                 </div>
                 <div class="input-container">
-                    <label for="user-email" id="user-email">Email</label>
-                    <input type="email">
+                    <label for="user-email" id="user-email"></label>
+                    <input type="email" name="your-email" id="your-email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z]{2,}$" maxlength="55" autocomplete="on" accesskey="e" required="true">
                 </div>
                 <div class="input-container">
-                    <label for="message" id="message">Your message</label>
-                    <input type="text">
+                    <label for="message" id="message"></label>
+                    <input type="text" id="your-message" placeholder="Your message" minlength="20" accesskey="c" required="true" cols="30" rows="6">
                 </div>
             </form>
         </div>

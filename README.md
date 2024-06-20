@@ -15,3 +15,7 @@ You won’t have a lot of instruction, you are free to implement it the way that
 
 <h2 align="center">Our Webpage<b></h2>
 <h3></h3>
+
+Authors
+- Ahmad Nawabi
+- Jordan Arguelles
